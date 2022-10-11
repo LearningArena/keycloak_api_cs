@@ -1,0 +1,21 @@
+name: Keycloak C# client API - Dependency Test
+
+on:
+  schedule:
+    - cron: '*/59 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0.x'
+    - name: Init application / add dependency / run
+      run: |
+        dotnet new console -o dependency-test
+        cd dependency-test
+        dotnet add package keycloak_api_cs
+        dotnet run

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>net6.0</TargetFramework>
+    <ReleaseVersion>1</ReleaseVersion>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>NetLicensingClient-csharp</PackageId>
+    <PackageVersion>1</PackageVersion>
+    <Authors>RISE</Authors>
+    <Copyright>© 2022 RISE</Copyright>
+    <PackageIconUrl></PackageIconUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <Owners>RISE</Owners>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LearningArena/keycloak_api_cs</RepositoryUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Summary>Keycloak C# API</Summary>
+    <PackageTags>Keycloak API</PackageTags>
+    <Title>Keycloak C# API</Title>
+    <Description>Keycloak C# API</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Serilog" Version="2.11.1-dev-01397" />
+  </ItemGroup>
+
+</Project>
