@@ -6,7 +6,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ReleaseVersion>1</ReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>NetLicensingClient-csharp</PackageId>
+    <PackageId>keycloak_api_cs</PackageId>
     <PackageVersion>1</PackageVersion>
     <Authors>RISE</Authors>
     <Copyright>© 2022 RISE</Copyright>
