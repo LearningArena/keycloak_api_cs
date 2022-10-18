@@ -16,8 +16,8 @@ jobs:
       with:
         dotnet-version: '6.0.x'
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore library
     - name: Build
       run: dotnet build library --configuration Release --no-restore
     - name: Test
-      run: dotnet run --project demo
+      run: dotnet run demo --project demo
