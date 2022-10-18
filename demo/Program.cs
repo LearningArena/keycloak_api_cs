@@ -1,6 +1,8 @@
 using System;
 using System.Net.Http;
 
+
+
 HttpClient client = new HttpClient();
 Keycloak.Keycloak_Config c = new Keycloak.Keycloak_Config
 {
@@ -10,6 +12,9 @@ Keycloak.Keycloak_Config c = new Keycloak.Keycloak_Config
 	credentials_secret = Environment.GetEnvironmentVariable("keycloak_myclient_credentials_secret")
 };
 
-Keycloak.Keycloak_Access_Token token = Keycloak.Keycloak.login(client, c, "email@company.com", "mypw");
+if (c.realm != null)
+{
+	Keycloak.Keycloak_Access_Token token = Keycloak.Keycloak.login(client, c, "email@company.com", "mypw");
+}
 
 Console.WriteLine("Hej!");
